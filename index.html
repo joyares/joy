@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" type="text/css" href="dist/css/custom.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!-- javascript for navbar start -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- javascript for navbar End -->
+
+</head>
+<body>
+
+<header class="sticky">
+	<div id="top_lines">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6 col-xs-6">
+					<i class="icon-phone"></i>
+					<strong>+88 01000000000 / +88 01000000000</strong>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-6">
+
+					<ul id="top_links">
+
+						<li>
+							<a href="#" hreflang="en" title="English (en)">
+								<img src="#" alt="English (en)">
+								<span style="display:none">English</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" hreflang="bn" title="বাংলা (bn)" >
+								<img src="#" alt="বাংলা (bn)">
+								<span style="display:none">বাংলা</span>
+							</a>
+						</li>
+
+
+
+
+						<li><a href="#"><i class="icon-user-add"></i>Log in</a></li>
+						<li><a href="#">Register</a></li>
+						<li class="dropdown"> <a href="#" class="dropbtn"><i class="fa fa-user-plus"></i>Business</a>
+							<ul class="dropdown-content">
+								<li><a href="#">Sign In</a></li>
+								<li><a href="#/">Sign Up</a></li>
+							</ul>
+						</li>
+						<li><a href="#" id="wishlist_link" class="">Wishlist</a></li>
+					</ul>
+
+				</div>
+
+
+			</div>
+		</div></div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-3">
+					<div id="logo">
+						<a href="#">
+							<img class="logo_sticky" src="http://159.122.213.21/wp-content/themes/citytours/img/logo_sticky.png" alt="site logo"    data-retina="true" height="44" width="113">
+						</a>
+					</div>
+				</div>
+				<nav class="col-md-9 col-sm-9 col-xs-9">
+					<div class="bs-example">
+						<div class="btn-group">
+							
+							<button type="button" class="btn btn-primary">Another Button</button>
+							<div class="btn-group">
+								<button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Dropdown <span class="caret"></span></button>
+								<ul class="dropdown-menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</div>
+							<button type="button" class="btn btn-primary">Other Button</button>
+							<button type="button" class="btn btn-primary">Other Button</button>
+							<button type="button" class="btn btn-primary">Other Button</button>
+							<button type="button" class="btn btn-primary">Other Button</button>
+						</div>
+					</div>
+
+				</nav>
+			</div>
+		</div>
+		</header>
+
+<div class="post-content">
+			<div class="post nopadding clearfix homePageBanner">
+				<section id="search_container">
+					<div id="search">
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<a href="#tours" data-toggle="tab">Tours</a>
+							</li>
+							<li>
+								<a href="#hotels" data-toggle="tab">Hotels</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div id="tours" class="tab-pane active">
+								<form id="search-tour-form" role="search" method="get" action="#">
+									<input name="post_type" value="tour" type="hidden">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Destination</label>
+												<span class="ui-helper-hidden-accessible" role="status" aria-live="polite"></span>
+												<input id="search_tours" class="form-control ui-autocomplete-input" name="s" placeholder="Type your search terms" autocomplete="off" type="text">
+												<input class="tour_locations" name="locations" value="" type="hidden">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Themes</label>
+												<select class="form-control" name="tour_types">
+													<option value="" selected="">All tours</option>
+													<option value="67">Adventure</option>
+													<option value="82">Beaches & Islands</option>
+													<option value="79">Business Tours</option>
+													<option value="17">Churces</option>
+													<option value="86">City Tours</option>
+													<option value="81">Corporate Tours</option>
+													<option value="68">Family</option>
+													<option value="73">Hajj</option>
+													<option value="75">Hills</option>
+													<option value="23">Historic Buildings</option>
+													<option value="71">History & Culture</option>
+													<option value="69">Honeymoon</option>
+													<option value="77">Hot Air Baloon</option>
+													<option value="84">Medical Tours</option>
+													<option value="74">Nature</option>
+													<option value="80">Picnic</option>
+													<option value="78">Relax</option>
+													<option value="83">Resorts</option>
+													<option value="70">Romantic</option>
+													<option value="85">Study Tour</option>
+													<option value="72">Umrah</option>
+													<option value="76">Wildlife</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3">
+											<div class="form-group">
+												<label>
+													<i class="fa fa-calendar-o"></i>
+													Date
+												</label>
+												<input class="date-pick form-control tour-startDate" data-date-format="dd/mm/yyyy" name="date" type="text">
+											</div>
+										</div>
+										<div class="col-md-2 col-sm-3 col-xs-6 col-md-offset-3">
+											<div class="form-group">
+												<label>Adults</label>
+												<div class="numbers-row">
+													<input class="qty2 form-control" value="1" name="adults" type="text">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-2 col-sm-3 col-xs-6">
+											<div class="form-group">
+												<label>Children</label>
+												<div class="numbers-row">
+													<input class="qty2 form-control" value="0" name="kids" type="text">
+												</div>
+											</div>
+										</div>
+									</div>
+									<hr>
+									<button class="btn_1 green">
+										<i class="fa fa-search"></i>
+										Search now
+									</button>
+								</form>
+							</div>
+							
+						</div>
+					</div>
+				</section>
+				<br>
+
+			</div>
+			</div>
+
+<div><h1>test</h1></div>
+
+															
+
+
+
+
+	</body>
+	</html>
+
+
+
+
+
